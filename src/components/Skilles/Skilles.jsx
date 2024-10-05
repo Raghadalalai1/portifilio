@@ -116,6 +116,28 @@ export default function Skilles() {
           </span>
 
         </div>
+        <div className='progress-bar-circle' data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+          <Circle percent={webDesignerProgress} strokeWidth={4} strokeColor="rgb(30, 62, 98)" trailWidth={4}
+            style={{ position: 'relative' }} />
+          <span
+            className='progress-bar-text'
+          >
+            Git({webDesignerProgress}%)
+          </span>
+
+        </div>
+        <div className='progress-bar-circle' data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+          <Circle percent={javascript} strokeWidth={4} strokeColor="rgb(30, 62, 98)" trailWidth={4}
+            style={{ position: 'relative' }} />
+          <span
+            className='progress-bar-text'
+          >
+            GitHub({javascript}%)
+          </span>
+
+        </div>
       </div>
 
     </div>
