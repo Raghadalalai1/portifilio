@@ -1,0 +1,153 @@
+.contact{
+    width: 100%;
+    padding: 70px 38px;
+    /* background-color: rgb(237 237 237); */
+
+
+}
+.contact h1{
+    position: relative;
+    color: rgb(11, 25, 44);
+    text-align: center;
+}
+.contact h1::after {
+    content: "";
+    position: absolute;
+    width:100px;
+    height: 2px;
+    background-color:rgb(30, 62, 98);
+    bottom: -6px;
+    left: calc(50% - 50px);
+
+
+}
+.tree{
+    margin-top:50px;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+.tree div{
+
+display: flex;
+gap: 20px;
+align-items: center;
+flex-direction: column;
+margin-bottom: 15px;
+}
+.round{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(11, 25, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tree h3{
+    color: rgb(11, 25, 44) ;
+    
+}
+.tree p{
+    color: rgb(30, 62, 98) ;
+    font-weight:600 ;
+
+}
+form{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+.inputes{
+    width: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+
+}
+.inputes input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(194, 194, 194);
+    
+
+
+}
+textarea{
+    width: 74%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(207, 207, 207);
+
+}
+.con{
+width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.con button{
+    padding: 10px 30px;
+    border: 1px solid rgb(11, 25, 44);
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(11, 25, 44);
+    color: white;
+    margin-top: 10px;
+}
+.con button:hover{
+
+    background-color: white;
+    color:  rgb(11, 25, 44);
+   
+}
+.but{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 74%;
+}
+@media(max-width:990px){
+    .contact{
+        padding: 70px 30px;
+    }
+}
+@media(max-width:584px){
+    .inputes{
+flex-wrap: wrap;
+        width: 100%;
+    
+    }
+    .inputes input{
+        width: 100%;
+
+        
+    
+    
+    }
+    textarea{
+        width: 100%;
+    }
+    .but{
+        width: 100%;
+    }
+}

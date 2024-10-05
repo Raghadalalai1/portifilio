@@ -1,0 +1,52 @@
+.skilles {
+  width: 100%;
+  padding: 70px 38px;
+  background-color: rgb(237 237 237);
+
+}
+
+.skilles h1 {
+  position: relative;
+  color: rgb(11, 25, 44);
+  text-align: center;
+}
+
+.skilles h1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: rgb(30, 62, 98);
+  bottom: -6px;
+  left: calc(50% - 50px);
+
+
+}
+
+.contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35PX;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.progress-bar-circle {
+  width: 150px;
+  margin: 10px 0px;
+  position: relative;
+}
+
+.progress-bar-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(11, 25, 44);
+}

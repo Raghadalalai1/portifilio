@@ -1,0 +1,129 @@
+.projects{
+    width: 100%;
+    padding: 70px 38px;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: rgb(237 237 237);; */
+
+}
+.projects h1{
+    position: relative;
+    color: rgb(11, 25, 44);
+}
+.projects h1::after {
+    content: "";
+    position: absolute;
+    width:100px;
+    height: 2px;
+    background-color:rgb(30, 62, 98);
+    bottom: -6px;
+    left: calc(50% - 50px);
+
+
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.button-container button{
+border: none;
+background-color: transparent;
+font-size: 16px;
+font-weight: 600;
+font-family: Poppins;
+cursor: pointer;
+position: relative;
+
+}
+.button-container button:hover::after{
+    width: 100%;
+
+}
+/* .button-container button::after{
+position: absolute;
+content: "";
+background-color: #10121a;
+bottom: 0;
+width: 0;
+height: 2px;
+left: 0;
+margin-bottom: -5px;
+transition: 0.5s;
+
+} */
+/* .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #10121a !important;
+
+} */
+.package{
+  
+height: 270px;
+    width: 350px;
+    background-color: white;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 1px rgb(212, 212, 212);
+}
+.package:hover  .circle{
+  
+background-color: rgb(30, 62, 98);
+
+}
+.package:hover{
+  
+transform: scale(1.06);
+
+}
+.containar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgb(237 237 237) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.title-card{
+    color:  rgb(11, 25, 44);
+}
+.des-card{
+    color: rgb(30, 62, 98);
+}
+@media(max-width:770px){
+    .containar{
+
+        justify-content: center;
+
+    
+    }
+}
+@media(max-width:990px){
+
+    .projects{
+
+        padding: 70px 30px;
+    
+    }
+}

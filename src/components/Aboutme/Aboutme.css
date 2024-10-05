@@ -1,0 +1,211 @@
+.about-me {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap-reverse;
+    /* align-items: start; */
+    margin: 70px 0px;
+    padding: 0px 50px;
+    overflow: hidden;
+
+}
+.about-me h2{
+    position: relative;
+    color: rgb(11, 25, 44);
+    
+}
+.about-me h2::after {
+    content: "";
+    position: absolute;
+    width:100px;
+    height: 2px;
+    background-color:rgb(30, 62, 98);
+    bottom: -6px;
+    left:0;
+
+
+}
+
+.about-left {
+    width: 437px;
+    height: 600px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.about-img {
+    width: 437px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+.name {
+    font-weight: 700;
+    color: rgb(30, 62, 98);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 38px;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+    border-radius: 30px;
+    /* box-shadow: 0px 0px 10px 1px black; */
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0)
+}
+
+.progress-bar div {
+    display: block;
+    height: 100%;
+    background-color: rgb(30, 62, 98);
+    border-radius: 50px;
+    padding: 0PX 15px;
+    font-size: small;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-container p {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    /* justify-content: space-between; */
+    /* width: 50%; */
+
+}
+.buttons button{
+padding: 10px 30px;
+border: 1px solid rgb(11, 25, 44);
+border-radius: 10px;
+background-color: transparent;
+font-weight: 500;
+cursor: pointer;
+transition: 0.5s;
+
+
+}
+.about-right .es-info{
+    color:rgb(11, 25, 44) ;
+    font-weight: 500;
+}
+.buttons .Download-CV{
+
+
+background-color: rgb(11, 25, 44);
+color: white;
+
+}
+.buttons .Download-CV:hover{
+
+
+background-color: white;
+color: rgb(11, 25, 44);
+
+}
+.buttons button:hover{
+
+
+background-color: rgb(11, 25, 44);
+color: white;
+
+
+
+}
+
+.about-right {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: center;
+}
+.about-right h2 {
+font-size: 30px;
+font-weight: 700;
+color:rgb(11, 25, 44);
+}
+.info{
+    font-weight: 700;
+    color: rgb(30, 62, 98);
+    font-size: 18px;
+}
+
+
+@keyframes scrollProgress {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+@media(max-width:990px){
+    .about-right {
+        width: 100%;
+
+    }
+    .about-me {
+
+        padding: 0px 30px;
+    
+    }
+}
+@media(max-width:506px){
+    .about-left {
+        width: 350px;
+
+    }
+    
+    .about-img {
+        width: 350px;
+
+    }
+    .buttons{
+
+        justify-content: space-between;
+      
+    
+    }
+}
+@media(max-width:420px){
+    .about-left {
+        width: 300px;
+
+    }
+    
+    .about-img {
+        width: 300px;
+
+    }
+    .info {
+
+        font-size: 16px;
+    }
+}
