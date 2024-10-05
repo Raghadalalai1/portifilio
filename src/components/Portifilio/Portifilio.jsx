@@ -171,8 +171,8 @@ export default function Portifilio() {
       id: 16,
       image: img18,
       title: 'HTML & CSS & JS Pure',
-      line: 'https://raghadalalai1.github.io/Task-9/',
-      line1: 'https://github.com/Raghadalalai1/Task-9'
+      line: 'https://raghadalalai1.github.io/task-7/',
+      line1: 'https://github.com/Raghadalalai1/task-7'
 
 
 
