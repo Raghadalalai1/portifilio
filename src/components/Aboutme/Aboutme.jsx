@@ -41,7 +41,7 @@ export default function Aboutme() {
     }, [totalHeight]);
 
     const handleDownloadCV = () => {
-        fetch('/RaghadAlali resume.pdf')
+        fetch('./RaghadAlaliResume (1).pdf')
             .then(response => response.blob())
             .then(blob => {
                 FileSaver.saveAs(blob, 'RaghadAlAli_CV.pdf');
