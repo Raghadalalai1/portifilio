@@ -25,7 +25,7 @@ export default function Header() {
         <span className='change'>
           <Typewriter
             options={{
-              strings: ['Raghad Yousef Alali','Software Engineer', 'Web Designer and Developer', 'Front-end developer'],
+              strings: ['Raghad Yousef Alali','Software Engineer', 'Web Designer ', 'Front-end developer'],
               autoStart: true,
               loop: true,
             }}
